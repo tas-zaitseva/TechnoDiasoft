@@ -1,3 +1,26 @@
+.menu {
+  @include tablets {
+    display: none;
+  }
+}
+
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(40px);
+  row-gap: rem(10px);
+}
+
+.menu__item {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.menu__link {
+  color: inherit;
+  transition: color .2s;
+}
+
+.menu__link:hover {
+  color: $red;
 }

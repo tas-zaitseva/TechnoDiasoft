@@ -1,5 +1,6 @@
 //color scheme 
 $red: #AD001B;
+$dark-red: #920016;
 $grey: #686767;
 $light-grey: #F5F6F8;
 
@@ -8,7 +9,11 @@ $baseFontSize: 20px;
 
 //sizes
 $container-max-width: 1218px;
-$container-width: 90%;
+
+//breakpoints
+$laptops: 992px;
+$tablets: 768px;
+$phones: 480px;
 
 //importig files
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap);
@@ -33,3 +38,4 @@ $container-width: 90%;
 @import "checkbox";
 @import "footer";
 @import "address";
+@import "hamburger-menu";

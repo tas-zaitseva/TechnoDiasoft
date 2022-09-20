@@ -1,22 +1,41 @@
 .advantages {
   padding-bottom: rem(90px);
+
+  @include tablets {
+    padding-bottom: rem(60px);
+  }
 }
 
 .advatages__headline {
   margin-bottom: rem(55px);
+
+  @include tablets {
+    margin-bottom: rem(50px);
+  }
 }
 
 .advatages__text-content {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: rem(54px);
+  row-gap: rem(30px);
+  column-gap: rem(30px);
+  
+  @include tablets {
+    margin-bottom: rem(40px);
+  }
 }
 
 .advantages__text {
-  flex: 1 1 rem(550px);
+  flex: 1 1 calc(100% / 2 - 30px);
+  min-width: rem(380px);
 
   p {
     margin-bottom: rem(20px);
+    
+    @include tablets {
+      margin-bottom: rem(15px);      
+    }
   }
 
   p:last-child {
@@ -24,22 +43,34 @@
   }
 }
 
-.advatages__list {
+.advantages__list {
   display: flex;
   flex-wrap: wrap;
   column-gap: rem(30px);
+  row-gap: rem(30px);
   margin-bottom: rem(78px);
+
+  @include tablets {
+    margin-bottom: rem(50px);
+  }
 }
 
 .advantages__item {
-  flex: 1 1 rem(386px);
+  flex: 1 1 calc(100% / 3 - rem(60px));
+  display: flex;
+  justify-content: center;
 }
 
-.advantage {
+.advantage__block {
   position: relative;
+  max-width: rem(386px);
+  min-width: rem(290px);
+  width: 100%;
+  background: $light-grey;
+  padding: rem(25px) rem(42px) rem(40px);
 }
 
-.advantage::before {
+.advantage__block::before {
   content: '';
   display: block;
   width: rem(27px);
@@ -53,11 +84,6 @@
   transform: translateY(-30%);
 }
 
-.advantage__block {
-  background: $light-grey;
-  padding: rem(25px) rem(42px) rem(40px);
-}
-
 .advantage__title {
   font-size: rem(64px);
   font-variant-numeric: normal;
@@ -67,6 +93,7 @@
 .advantages__block {
   display: flex;
   flex-wrap: wrap;
+  row-gap: rem(30px);
 }
 
 .advantages__inner-block {
@@ -82,7 +109,11 @@
   display: flex;
   flex-direction: column;
   row-gap: rem(30px);
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
+
+  @include tablets {
+    row-gap: rem(15px);
+  }
 }
 
 .advantages__inner-item {
@@ -102,7 +133,6 @@
   border-radius: 50%;
   line-height: rem(40px);
   text-align: center;
-  vertical-align: center;
   font-family: 'roboto', helvetica, sans-serif;
   font-weight: 400;
 }

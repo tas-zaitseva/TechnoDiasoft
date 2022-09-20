@@ -2,20 +2,37 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: rem(30px);
+  row-gap: rem(30px);
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .contacts__block {
   flex: 1 1 calc(100% / 2 - rem(30px));
 }
 
+.contacts__headline {
+  margin-bottom: rem(38px);
+}
+
 .contacts__title {
   margin-bottom: rem(38px);
+
+  @include tablets {
+    margin-bottom: rem(35px);
+  }
 }
 
 .contacts__subtitle {
   font-size: rem(20px);
-  margin-bottom: rem(38px);
   max-width: rem(384px);
+
+  @include tablets {
+    max-width: 100%;
+    font-size: rem(22px);
+  }
 }
 
 .contacts__socials {
@@ -25,4 +42,8 @@
 
 .contacts__block:last-child {
   padding-top: rem(48px);
+
+  @include laptops {
+    padding-top: 0;
+  }
 }

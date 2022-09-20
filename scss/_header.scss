@@ -2,23 +2,72 @@
   height: rem(120px);
   display: flex;
   align-items: center;
+
+  @include tablets {
+    height: rem(100px);
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
+
+  @include tablets {
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
   margin-right: auto;
-  width: rem(350px);
+  width: 350px;
+  height: 44px;
+  margin-right: rem(44px);
+  flex-shrink: 0;
+
+  @include laptops {
+    margin-right: rem(15px);
+    width: rem(280px);
+    height: rem(35px);
+  }
+
+  @include tablets {
+    width: rem(310px);
+    height: rem(39px);
+  }
+  
+  @include phones {
+    width: rem(280px);
+    height: rem(35px);
+  }
 }
 
 .header__menu {
+  margin-left: auto;
   .menu__list {
     column-gap: rem(40px);
+
+    @include laptops {
+      column-gap: rem(10px);
+    }
   }
+
   margin-right: rem(44px);
   font-size: rem(17px);
   line-height: rem(20px);
+
+  @include laptops {
+    margin-right: rem(15px);
+  }
+}
+
+.button.header__button {
+  flex-shrink: 0;
+
+  @include laptops {
+    padding: rem(15px);
+  }
+
+  @include tablets {
+    display: none;
+  }
 }

@@ -8,11 +8,16 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: rem(30px);
-  // min-width: rem(480px);
+  row-gap: rem(30px);
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .form__block {
   flex: 1 1 calc(100% / 2 - rem(30px));
+  min-width: rem(214px);
 }
 
 .form__input {

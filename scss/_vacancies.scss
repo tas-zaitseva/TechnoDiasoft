@@ -7,26 +7,41 @@
   background: $light-grey;
   padding-top: rem(100px);
   padding-bottom: rem(114px);
+
+  @include tablets {
+    padding-top: rem(60px);
+    padding-bottom: rem(60px);
+  }
 }
 
 .vacancies__title {
   margin-bottom: rem(35px);
+
+  @include tablets {
+    margin-bottom: rem(25px);
+  }
 }
 
 .vacancies__headline {
   margin-bottom: rem(62px);
   max-width: rem(877px);
+
+  @include tablets {
+    margin-bottom: rem(50px);
+  }
 }
 
 .vacancies__list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: rem(32px);
-  row-gap: rem(80px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(rem(300px), 1fr));
+  grid-gap: rem(80px) rem(32px);
+
+  @include tablets {
+    grid-row-gap: rem(40px);
+  }
 }
 
 .vacancy {
-  flex: 1 1 rem(372px);
   display: flex;
   flex-direction: column;
   row-gap: rem(18px);
@@ -45,6 +60,7 @@
 }
 
 .vacancy__icon-bg {
+  flex-shrink: 0;
   width: rem(104px);
   height: rem(104px);
   background: white;

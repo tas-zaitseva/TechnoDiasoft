@@ -4,11 +4,28 @@
   row-gap: rem(30px);
   max-width: rem(250px);
   font-size: rem(24px);
+
+  @include tablets {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: rem(15px);
+    row-gap: 0;
+    max-width: 100%;
+  }
 }
 
 .features__item {
   padding: rem(21px) rem(17px);
   position: relative;
+
+  @include laptops {
+    font-size: rem(22px);
+  }
+
+  @include tablets {
+    flex: 1 1 calc(100% / 3 - rem(60px));
+    padding: rem(21px) rem(15px);
+  }
 }
 
 .features__item::before {

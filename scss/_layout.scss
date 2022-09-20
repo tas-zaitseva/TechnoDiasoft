@@ -4,6 +4,14 @@
 
 html {
   font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: 18px;
+  }
+
+  @include phones {
+    font-size: 4.5vmin;
+  }
 }
 
 body {
@@ -77,15 +85,22 @@ address {
   font-style: normal;
 }
 
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
 .container {
-  max-width: $container-max-width;
-  width: $container-width;
+  max-width: calc($container-max-width + 20px);
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
 }
 
 .outer-container {
   height: 100%;
   max-width: 1622px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }

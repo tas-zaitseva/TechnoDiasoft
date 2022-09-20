@@ -1,14 +1,29 @@
 .about {
   padding-top: rem(78px);
+
+  @include tablets {
+    padding-top: rem(60px);
+  }
 }
 
 .about__headline {
   margin-bottom: rem(85px);
+
+  @include tablets {
+    margin-bottom: rem(50px);
+  }
 }
 
 .about__content {
+  margin-bottom: rem(15px);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30px);
+  }
 }
 
 .about__features {
@@ -22,14 +37,51 @@
 }
 
 .about__text {
-  margin-bottom: rem(29px);
-  padding-top: rem(21px);
+  margin-bottom: rem(30px);
+  padding-top: rem(20px);
+  
+  @include tablets {
+    padding-top: 0;    
+  }
 
   p {
     margin-bottom: rem(20px);
+
+    @include tablets {
+      margin-bottom: rem(15px);
+    }
   }
 
   p:last-child {
     margin-bottom: 0;
   }
+}
+
+.about__image {
+  max-width: rem(1035px);
+  width: 90%;
+  height: 390px;
+  margin: 0 auto;
+  position: relative;
+
+  @include laptops {
+    height: 280px;
+  }
+
+  @include tablets {
+    height: 275px;
+  }
+
+  @include phones {
+    height: rem(110px);
+  }
+}
+
+.about__pic {
+  position: absolute;
+  
+  @include phones {
+    
+  }
+  
 }

@@ -1,14 +1,24 @@
 .resume__title {
   margin-bottom: rem(60px);
+  
+  @include tablets {
+    margin-bottom: rem(50px);
+  }
 }
 
 .resume__list {
   display: flex;
   column-gap: rem(30px);
+  row-gap: rem(30px);
   flex-wrap: wrap;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .resume__item {
   flex: 1 1 calc(100% / 4 - rem(30px));
+  min-width: rem(230px);
   padding-top: rem(46px);
 }

@@ -1,21 +1,37 @@
 .button {
-  background: $red;
+  background-color: $red;
   padding: rem(15px) rem(30px);
   color: white;
   font-size: rem(17px);
-  line-height: rem(20px);
+  line-height: 1.17;
   font-weight: 700;
   text-align: center;
+  transition: background-color .2s;
+
+  @include phones {
+    font-size: rem(20px);
+    padding: rem(20px) rem(35px);
+  }
+}
+
+.button:hover {
+  background-color: $dark-red;
 }
 
 .button--color-transparent {
-  background: transparent;
+  background-color: transparent;
   padding: 0 rem(33px);
   color: $red;
   font-size: rem(20px);
   line-height: 1.3;
   font-weight: 400;
   position: relative;
+  transition: color .2s;
+}
+
+.button--color-transparent:hover {
+  color: $dark-red;
+  background-color: transparent;
 }
 
 .button--color-transparent:before {
