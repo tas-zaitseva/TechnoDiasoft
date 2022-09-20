@@ -10,14 +10,14 @@
   position: absolute;
   width: rem(21px);
   height: rem(28px);
-  background: url(../svg/pin-vertical-grey.svg);
+  background: url(./svg/pin-vertical-grey.svg);
   left: 0;
   top: 0;
   z-index: 100;
 }
 
 .option:first-child::before {
-  background: url(../svg/pin-vertical-red.svg);
+  background: url(./svg/pin-vertical-red.svg);
 }
 
 .option__border {
