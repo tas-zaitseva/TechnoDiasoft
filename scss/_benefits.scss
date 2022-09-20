@@ -9,12 +9,49 @@
   }
 }
 
+.benefits__head-block {
+  position: relative;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+}
+
+.benefits__img {
+  max-width: rem(490px);
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-35%);
+
+  @include laptops {
+    bottom: 0;
+    top: auto;
+    transform: translateY(0);
+  }
+
+  @include tablets {
+    position: static;
+  }
+}
+
+.benefits__pic {
+  object-fit: cover;
+  height: 100%;
+}
+
 .benefits__headline {
   margin-bottom: rem(78px);
   max-width: rem(758px);
+  width: 65%;
   
   @include tablets {
-    margin-bottom: rem(50px);
+    margin-bottom: rem(20px);
+    width: 100%;
   }
 }
 

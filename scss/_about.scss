@@ -60,20 +60,20 @@
 .about__image {
   max-width: rem(1035px);
   width: 90%;
-  height: 390px;
+  height: rem(390px);
   margin: 0 auto;
   position: relative;
 
   @include laptops {
-    height: 280px;
+    height: 30vw;
   }
 
   @include tablets {
-    height: 275px;
+    height: 36vw;
   }
 
   @include phones {
-    height: rem(110px);
+    height: 25vw;
   }
 }
 
@@ -81,7 +81,7 @@
   position: absolute;
   
   @include phones {
-    
+
   }
   
 }

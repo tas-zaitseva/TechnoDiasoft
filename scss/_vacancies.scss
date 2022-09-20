@@ -7,6 +7,10 @@
   background: $light-grey;
   padding-top: rem(100px);
   padding-bottom: rem(114px);
+  
+  @include laptops {
+    padding-top: rem(90px);
+  }
 
   @include tablets {
     padding-top: rem(60px);
