@@ -1,0 +1,40 @@
+.checkbox-input {
+  display: none;
+}
+
+.checkbox__visible-elem {
+  display: flex;
+  align-items: center;
+  column-gap: rem(18px);
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox__button {
+  width: rem(30px);
+  height: rem(30px);
+  background: $red;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.checkbox__button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(25px);
+    height: rem(16px);
+    background: url(../svg/checkmark-white.svg) center center no-repeat;
+    background-size: contain;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    opacity: 0;
+}
+
+.checkbox-input:checked + .checkbox__visible-elem {
+  .checkbox__button::after {
+    opacity: 1;
+  }
+}

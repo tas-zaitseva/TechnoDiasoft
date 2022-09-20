@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(23px);
+}
+
+.form__row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(30px);
+  // min-width: rem(480px);
+}
+
+.form__block {
+  flex: 1 1 calc(100% / 2 - rem(30px));
+}
+
+.form__input {
+  background: $light-grey;
+  border: 1px solid transparent;
+  padding: rem(14px) rem(17px);
+  border-bottom: 1px solid black;
+  color: black
+}
+
+.form__input::placeholder {
+  color: #C4C5CC;
+}
+
+.form__input:focus {
+  border: 1px solid black;
+  background: white;
+  outline: none;
+}
+
+.form__input--comment {
+  min-height: rem(267px);
+}

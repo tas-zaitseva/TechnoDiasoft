@@ -1,0 +1,35 @@
+.about {
+  padding-top: rem(78px);
+}
+
+.about__headline {
+  margin-bottom: rem(85px);
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.about__features {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.about__text-content {
+  grid-column-start: 5;
+  grid-column-end: -1;
+}
+
+.about__text {
+  margin-bottom: rem(29px);
+  padding-top: rem(21px);
+
+  p {
+    margin-bottom: rem(20px);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

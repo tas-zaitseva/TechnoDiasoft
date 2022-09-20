@@ -1,0 +1,21 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: rem(100px);
+  padding-bottom: rem(100px);
+}
+
+.section__headline {
+  max-width: rem(898px);
+}
+
+.section__title {
+  font-size: rem(64px);
+  line-height: rem(75px);
+}
+
+.section__subtitle {
+  font-size: rem(24px);
+}

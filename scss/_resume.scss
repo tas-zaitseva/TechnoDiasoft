@@ -1,0 +1,14 @@
+.resume__title {
+  margin-bottom: rem(60px);
+}
+
+.resume__list {
+  display: flex;
+  column-gap: rem(30px);
+  flex-wrap: wrap;
+}
+
+.resume__item {
+  flex: 1 1 calc(100% / 4 - rem(30px));
+  padding-top: rem(46px);
+}

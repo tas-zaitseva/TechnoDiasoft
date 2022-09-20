@@ -1,13 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>TechnoDiaSoft</title>
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo logo">
+          <svg class="logo__pic">
+            <use xlink:href="./svg/sprite.svg#logo"></use>
+          </svg>
+        </div>
+        <menu class="menu header__menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Направления</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Преимущества</a></li>
+          </ul>
+        </menu>
+        <a href="#" class="button">Заполнить резюме</a>
+      </div>
+    </header>
+    <section class="section about">
+      <div class="container">
+        <div class="section__headline about__headline">
+          <h2 class="section__title">Техно Диасофт: IT компания со взглядом в будущее</h2>
+        </div>
+        <div class="about__content">
+          <ul class="about__features features">
+            <li class="features__item">Команда опытных специалистов</li>
+            <li class="features__item">Широкий спектр информационных технологий</li>
+            <li class="features__item">Инновационные разработки для бизнеса</li>
+          </ul>
+          <div class="about__text-content">
+            <div class="about__text">
+              <p><b>Техно Диасофт</b> — компания профессионалов, которые не боятся искать и находить свой путь, нетривиальные решения, реализовывать смелые проекты. Каждый день мы посвящаем другим, делая их жизнь мобильнее, удобнее и успешнее. И при этом растём сами. Нас выбирают крупные известные банки, финансовые компании, инновационные предприятия.</p>
+              <p>Несмотря на такую серьёзную сферу деятельности, дизнь и работа для нас — это «игра». С одной стороны, имеющая чёткие правила, чтобы выполнять все гарантии, с другой — дающая удовольствие от каждой минуты, прожитой на рабочем месте.</p>
+              <p>Рост, позитив, драйв: этими компонентами пропитаны будни всех наших сотрудников. Все это автоматически передаётся клиентам. Поэтому они выбирают нас.</p>
+            </div>
+            <a href="#" class="about__button button button--color-transparent">Читать дальше</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section vacancies">
+      <div class="outer-container vacancies__outer-container">
+        <div class="container">
+          <div class="section__headline vacancies__headline">
+            <h2 class="section__title vacancies__title">Открытые вакансии</h2>
+            <div class="section__subtitle">Если ты — специалист в одной из ИТ-сфер, а наш дух тебе близок и понятен, мы будем рады пригласить тебя стать частью нашей команды!</div>
+          </div>
+          <div class="vacancies__content">
+            <ul class="vacancies__list">
+              <li class="vacancies__item vacancy">
+                <div class="vacancy__headline">
+                  <div class="vacancy__icon-bg">
+                    <div class="vacancy__icon">
+                      <svg class="vacancy__pic">
+                        <use xlink:href="./svg/sprite.svg#vacancy-icon-1"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h4 class="vacancy__title">Разработчики IT&#8209;продуктов</h4>
+                </div>
+                <div class="vacancy__text">
+                  <p>Если ты не только пишешь, но и думаешь на языках PHP, Java, Python, Java Script, ReactJS, C++, Data Science, приходи к нам, найдёшь собеседников и крутых заказчиков. Думай о своём «кейсе» смолоду!</p>
+                </div>
+              </li>
+              <li class="vacancies__item vacancy">
+                <div class="vacancy__headline">
+                  <div class="vacancy__icon-bg">
+                    <div class="vacancy__icon">
+                      <svg class="vacancy__pic">
+                        <use xlink:href="./svg/sprite.svg#vacancy-icon-2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h4 class="vacancy__title">iOS/Android разработчики</h4>
+                </div>
+                <div class="vacancy__text">
+                  <p>Вакансия для тех, кто готов меняться быстрее, чем мир; предвидеть изменения до их свершения. Возможно, даже бороться за независимость и кастомизировать платформы.</p>
+                </div>
+              </li>
+              <li class="vacancies__item vacancy">
+                <div class="vacancy__headline">
+                  <div class="vacancy__icon-bg">
+                    <div class="vacancy__icon">
+                      <svg class="vacancy__pic">
+                        <use xlink:href="./svg/sprite.svg#vacancy-icon-3"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h4 class="vacancy__title">Аналитики</h4>
+                </div>
+                <div class="vacancy__text">
+                  <p>Нужны «переводчики» с языка клиентов на язык программирования и наоборот. В приоритете: аналитический склад ума, умение собирать данные, читать и составлять спецификации, инструкции и т.п.</p>
+                </div>
+              </li>
+              <li class="vacancies__item vacancy">
+                <div class="vacancy__headline">
+                  <div class="vacancy__icon-bg">
+                    <div class="vacancy__icon">
+                      <svg class="vacancy__pic">
+                        <use xlink:href="./svg/sprite.svg#vacancy-icon-4"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h4 class="vacancy__title">Специалисты QA</h4>
+                </div>
+                <div class="vacancy__text">
+                  <p>Ты уверен, что КАЧЕСТВО — это не только верные коды, но и схемы взаимодействия людей? Если ты «вырос» из тестировщика и хочешь организовывать команду на результат — значит, это твоя вакансия!</p>
+                </div>
+              </li>
+              <li class="vacancies__item vacancy">
+                <div class="vacancy__headline">
+                  <div class="vacancy__icon-bg">
+                    <div class="vacancy__icon">
+                      <svg class="vacancy__pic">
+                        <use xlink:href="./svg/sprite.svg#vacancy-icon-5"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h4 class="vacancy__title">DevOps инженеры</h4>
+                </div>
+                <div class="vacancy__text">
+                  <p>Умеешь собирать воедино все части процесса при создании продукта? Рассматривать проблемы с разных точек зрения? Мы предопставим поле для деятельности, уважение и достойную оплату.</p>
+                </div>
+              </li>
+              <li class="vacancies__item vacancy">
+                <div class="vacancy__headline">
+                  <div class="vacancy__icon-bg">
+                    <div class="vacancy__icon">
+                      <svg class="vacancy__pic">
+                        <use xlink:href="./svg/sprite.svg#vacancy-icon-6"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h4 class="vacancy__title">Разработчик Kotlin</h4>
+                </div>
+                <div class="vacancy__text">
+                  <p>Если вы отлично владеете не только Kotlin, но и Java, С/С++, SQL, знаете, что такое Gradle, Android Studio — вам будут сразу доступны высокие позиции у нас. Остальным поможем вырасти в Android специалиста.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section advantages">
+      <div class="container">
+        <div class="section__headline advatages__headline">
+          <h2 class="section__title">Мы в цифрах</h2>
+        </div>
+        <div class="advantages__content">
+          <div class="advatages__text-content">
+            <div class="advantages__text">
+              <p>Флагманским продуктом компании, разработанным на базе платформы, является автоматизированная банквоская система xBank. </p>
+              <p>В 2012 году xBank была внедрена в двух крупных подразделениях Сбербанка России: Северо-Западном и Западно-Уральском территориальных банках, а это 10 крупных субъектов РФ.</p>
+            </div>
+            <div class="advantages__text">
+              <p>Техно Диасофт работает с 1 июля 2010 года.</p>
+              <p>В 2012 году наша компания стала официальным участником инновационного проекта «Сколково».</p>
+              <p>Мы создали уникальную платформу «Название» (xBank?) и непрерывно оптимизировали её под стабильную работу даже на слабых каналах связи</p>
+            </div>
+          </div>
+          <ul class="advatages__list">
+            <li class="advantages__item advantage">
+              <div class="advantage__block">
+                <h2 class="advantage__title">800 м</h2>
+                <div class="advantage__subtitle">Действующих счётов</div>
+              </div>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantage__block">
+                <h2 class="advantage__title">400 м</h2>
+                <div class="advantage__subtitle">Активных клиентов</div>
+              </div>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantage__block">
+                <h2 class="advantage__title">120тб</h2>
+                <div class="advantage__subtitle">объём базы данных</div>
+              </div>
+            </li>
+          </ul>
+          <div class="advantages__block">
+            <div class="advantages__inner-block">
+              <div class="advantages__description">3 кита обеспечивают нам полное экономичическое и финансовое здоровье</div>
+            </div>
+            <div class="advantages__inner-block">
+              <ul class="advantages__inner-list">
+                <li class="advantages__inner-item">Плотное взаимодействие с крупными и региональными банками</li>
+                <li class="advantages__inner-item">Непрерывные инвестиции в новые технологии</li>
+                <li class="advantages__inner-item">Автоматизация внутренних процессов</li>
+              </ul>
+              <div class="advantages__inner-slogan">Именно поэтому мы на 100% уверены в завтрашнем дне!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section benefits">
+      <div class="container">
+        <div class="section__headline benefits__headline">
+          <h2 class="section__title benefits__title">А что это даёт лично тебе?</h2>
+          <div class="section__subtitle benefits__subtitle">Команда профессионалов приглашает тебя в наш мир, где разрабатываются не только насущные IT продукты для банков, но и продукты будущего</div>
+        </div>
+        <div class="benefits__content">
+          <ul class="benefits__list">
+            <li class="benefits__item benefit">
+              <h3 class="benefit__title">Гарантии</h3>
+              <ul class="benefit__list">
+                <li class="benefit__item">Возможность хорошо зарабатывать без поиска подработок</li>
+                <li class="benefit__item">Плотное взаимодействие с крупными и региональными банками</li>
+                <li class="benefit__item">Белая зарплата 2 раза в месяц, без задержек</li>
+                <li class="benefit__item">Индексация и стабильный рост</li>
+              </ul>
+            </li>
+            <li class="benefits__item benefit">
+              <h3 class="benefit__title">Возможности</h3>
+              <ul class="benefit__list">
+                <li class="benefit__item">Обучение за счёт компании</li>
+                <li class="benefit__item">Система наставничества для быстрого прорыва</li>
+                <li class="benefit__item">Забытые социальные лифты</li>
+              </ul>
+            </li>
+            <li class="benefits__item benefit">
+              <h3 class="benefit__title">Защита и поддержка</h3>
+              <ul class="benefit__list">
+                <li class="benefit__item">Быстрое решение различных вопросов</li>
+                <li class="benefit__item">Компенсации на спорт и питание</li>
+                <li class="benefit__item">Льготное ДМС</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section resume">
+      <div class="container">
+        <div class="section__headline resume__headline">
+          <h2 class="section__title resume__title">Как отправить резюме?</h2>
+        </div>
+        <div class="resume__content">
+          <ul class="resume__list">
+            <li class="resume__item option">
+              <div class="option__border"></div>
+              <div class="option__content">
+                <div class="option__bg">
+                  <div class="option__img">
+                    <svg class="option__pic">
+                      <use xlink:href="./svg/sprite.svg#resume-icon-1"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="option__text">
+                  <p>Заполнить «быстрое резюме»</p>
+                </div>
+                <a href="#" class="button">Заполнить</a>
+              </div>
+            </li>
+            <li class="resume__item option">
+              <div class="option__border"></div>
+              <div class="option__content">
+                <div class="option__bg">
+                  <div class="option__img">
+                    <svg class="option__pic">
+                      <use xlink:href="./svg/sprite.svg#resume-icon-2"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="option__text">
+                  <p>При положительном рассмотрении тебе на почту или СМС придёт запрос на полное резюме. Подготовь его заранее</p>
+                </div>
+              </div>
+            </li>
+            <li class="resume__item option">
+              <div class="option__border"></div>
+              <div class="option__content">
+                <div class="option__bg">
+                  <div class="option__img">
+                    <svg class="option__pic">
+                      <use xlink:href="./svg/sprite.svg#resume-icon-3"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="option__text">
+                  <p>Собеседование. Собери «кейс» о своих проектах в удобном формате «Задача — действие — результат». Не забудь о хакатонах, конференциях.</p>
+                </div>
+              </div>
+            </li>
+            <li class="resume__item option">
+              <div class="option__border"></div>
+              <div class="option__content">
+                <div class="option__bg">
+                  <div class="option__img">
+                    <svg class="option__pic">
+                      <use xlink:href="./svg/sprite.svg#resume-icon-4"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="option__text">
+                  <p>Если в тебе есть потенциал и желание развиваться, то мы обязательно найдём для тебя место в нашей команде!</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section contacts">
+      <div class="container contacts__container">
+        <div class="contacts__block">
+          <div class="section__headline">
+            <h2 class="section__title contacts__title">Напишите нам</h2>
+            <div class="section__subtitle contacts__subtitle">Оставьте свои контакты, мы свяжемся с вами в ближайшее время</div>
+          </div>
+          <ul class="contacts__socials">
+            <li class="contacts__socials-item social">
+              <a href="#" class="social__link">
+                <div class="social__img">
+                  <svg class="social__pic">
+                    <use xlink:href="./svg/sprite.svg#social-tw"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="contacts__socials-item social">
+              <a href="#" class="social__link">
+                <div class="social__img">
+                  <svg class="social__pic">
+                    <use xlink:href="./svg/sprite.svg#social-fb"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="contacts__socials-item social">
+              <a href="#" class="social link">
+                <div class="social__img">
+                  <svg class="social__pic">
+                    <use xlink:href="./svg/sprite.svg#social-in"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__block">
+          <form action="" class="contacts__form form">
+            <div class="form__row">
+              <label class="form__block">
+                <input placeholder="Ваше имя" type="text" name="name" class="form__input">
+              </label>
+              <label class="form__block">
+                <input placeholder="Ваш email" type="email" name="email" class="form__input">
+              </label>
+            </div>
+            <div class="form__row">
+              <label class="form__block">
+                <textarea placeholder="Сообщение" name="comment" class="form__input form__input--comment"></textarea>
+              </label>
+            </div>
+            <div class="form__row">
+              <label class="form__block checkbox">
+                <input class="form__input checkbox-input" type="checkbox" name="personal-data" value="yes">
+                <div class="checkbox__visible-elem">
+                  <div class="checkbox__button"></div>
+                  <div class="checkbox__title">Даю согласие на обработку моих персональных данных</div>
+                </div>
+              </label>
+            </div>
+            <button type="submit" id="submit" class="form__button button button-size-l">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__content">
+          <li class="footer__column">
+            <address class="footer__address address footer__address--left">
+              <h3 class="address__title">Центральный офис г.&nbsp;Москва</h3>
+              <div class="address__description">115088, г. Москва, ул. Крутицкий вал, д. 26, строение 2</div>
+            </address>
+            <div class="footer__map-img" id="map-msk"></div>
+            <div class="footer__copyright footer__copyright--left">&copy <time>2020</time>, Техно Диасофт</div>
+          </li>
+          <li class="footer__column">
+            <address class="footer__address address">
+              <h3 class="address__title">Филиал в г.&nbsp;Санкт&#8209;Петербург</h3>
+              <div class="address__description">196247, г. Санкт-Петербург, Ленинский проспект 160, каб. 323А</div>
+            </address>
+            <div class="footer__map-img" id="map-spb"></div>
+            <div class="footer__copyright">Политика конфиденциальности</div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

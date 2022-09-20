@@ -1,0 +1,35 @@
+//color scheme 
+$red: #AD001B;
+$grey: #686767;
+$light-grey: #F5F6F8;
+
+//rem units
+$baseFontSize: 20px;
+
+//sizes
+$container-max-width: 1218px;
+$container-width: 90%;
+
+//importig files
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap);
+@import "media";
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+@import "layout";
+@import "header";
+@import "menu";
+@import "button";
+@import "section";
+@import "about";
+@import "features";
+@import "vacancies";
+@import "advantages";
+@import "benefits";
+@import "resume";
+@import "option";
+@import "contacts";
+@import "socials";
+@import "form";
+@import "checkbox";
+@import "footer";
+@import "address";

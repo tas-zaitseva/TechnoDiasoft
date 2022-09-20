@@ -1,0 +1,122 @@
+.advantages {
+  padding-bottom: rem(90px);
+}
+
+.advatages__headline {
+  margin-bottom: rem(55px);
+}
+
+.advatages__text-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: rem(54px);
+}
+
+.advantages__text {
+  flex: 1 1 rem(550px);
+
+  p {
+    margin-bottom: rem(20px);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advatages__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(30px);
+  margin-bottom: rem(78px);
+}
+
+.advantages__item {
+  flex: 1 1 rem(386px);
+}
+
+.advantage {
+  position: relative;
+}
+
+.advantage::before {
+  content: '';
+  display: block;
+  width: rem(27px);
+  height: rem(21px);
+  position: absolute;
+  top: 0;
+  left: rem(42px);
+  background: url(../svg/triangle-shrinked.svg) center center no-repeat;
+  background-size: contain;
+  z-index: 100;
+  transform: translateY(-30%);
+}
+
+.advantage__block {
+  background: $light-grey;
+  padding: rem(25px) rem(42px) rem(40px);
+}
+
+.advantage__title {
+  font-size: rem(64px);
+  font-variant-numeric: normal;
+  margin-bottom: rem(22px);
+}
+
+.advantages__block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__inner-block {
+  flex: 1 1 rem(550px);
+}
+
+.advantages__description {
+  font-size: rem(32px);
+  font-weight: 700;
+}
+
+.advantages__inner-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(30px);
+  margin-bottom: 30px;
+}
+
+.advantages__inner-item {
+  display: flex;
+  align-items: center;
+  column-gap: rem(16px);
+}
+
+.advantages__inner-item::before {
+  flex-shrink: 0;
+  display: block;
+  content: "1";
+  width: rem(40px);
+  height: rem(40px);
+  color: white;
+  background: $red;
+  border-radius: 50%;
+  line-height: rem(40px);
+  text-align: center;
+  vertical-align: center;
+  font-family: 'roboto', helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.advantages__inner-item:nth-child(2)::before {
+  content: "2";
+}
+
+.advantages__inner-item:nth-child(3)::before {
+  content: "3";
+}
+
+.advantages__inner-slogan {
+  font-size: rem(24px);
+  font-weight: 700;
+  color: $red;
+}

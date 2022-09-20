@@ -1,0 +1,70 @@
+.vacancies {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.vacancies__outer-container {
+  background: $light-grey;
+  padding-top: rem(100px);
+  padding-bottom: rem(114px);
+}
+
+.vacancies__title {
+  margin-bottom: rem(35px);
+}
+
+.vacancies__headline {
+  margin-bottom: rem(62px);
+  max-width: rem(877px);
+}
+
+.vacancies__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(32px);
+  row-gap: rem(80px);
+}
+
+.vacancy {
+  flex: 1 1 rem(372px);
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(18px);
+}
+
+.vacancy__headline {
+  display: flex;
+  column-gap: rem(25px);
+  align-items: center;
+}
+
+.vacancy__title {
+  font-size: rem(24px);
+  line-height: 1.3;
+  max-width: rem(215px);
+}
+
+.vacancy__icon-bg {
+  width: rem(104px);
+  height: rem(104px);
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vacancy__icon {
+  width: rem(56px);
+  height: rem(56px);
+}
+
+.vacancy__text {
+  p {
+    margin-bottom: rem(10px);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

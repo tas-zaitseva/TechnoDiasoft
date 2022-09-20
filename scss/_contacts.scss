@@ -1,0 +1,28 @@
+.contacts__container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(30px);
+}
+
+.contacts__block {
+  flex: 1 1 calc(100% / 2 - rem(30px));
+}
+
+.contacts__title {
+  margin-bottom: rem(38px);
+}
+
+.contacts__subtitle {
+  font-size: rem(20px);
+  margin-bottom: rem(38px);
+  max-width: rem(384px);
+}
+
+.contacts__socials {
+  display: flex;
+  column-gap: rem(10px);
+}
+
+.contacts__block:last-child {
+  padding-top: rem(48px);
+}

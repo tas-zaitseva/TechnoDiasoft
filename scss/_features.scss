@@ -1,0 +1,24 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(30px);
+  max-width: rem(250px);
+  font-size: rem(24px);
+}
+
+.features__item {
+  padding: rem(21px) rem(17px);
+  position: relative;
+}
+
+.features__item::before {
+  content: '';
+  display: block;
+  background: url(../svg/triangle.svg) center center no-repeat;
+  background-size: contain;
+  width: rem(21px);
+  height: rem(21px);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
