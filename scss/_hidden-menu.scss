@@ -1,0 +1,41 @@
+.hidden-menu {
+  width: 0;
+  height: 0;
+  transition: height .2s;
+  overflow: hidden;
+
+  @include tablets {
+    padding: rem(25px) rem(10px);
+    padding-bottom: 0;
+    width: 100%;
+  }
+}
+
+.hidden-menu__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include phones {
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-right: rem(20px);
+    column-gap: rem(20px);
+  }
+
+  .menu__list {
+    column-gap: rem(20px);
+  }
+
+  .menu__item {
+    flex-grow: 0;
+  }
+
+  .button {
+    padding: rem(15px) rem(10px);
+    flex-shrink: 0;
+  }
+
+}

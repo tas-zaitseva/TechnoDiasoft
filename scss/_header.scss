@@ -1,10 +1,11 @@
 .header {
-  height: rem(120px);
+  padding-top: rem(38px);
   display: flex;
   align-items: center;
 
   @include tablets {
-    height: rem(100px);
+    flex-direction: column;
+    padding-bottom: rem(13px);
   }
 }
 
@@ -43,12 +44,18 @@
 
 .header__menu {
   margin-left: auto;
+
+  @include tablets {
+    display: none;
+  }
+
   .menu__list {
     column-gap: rem(40px);
 
     @include laptops {
       column-gap: rem(10px);
     }
+
   }
 
   margin-right: rem(44px);

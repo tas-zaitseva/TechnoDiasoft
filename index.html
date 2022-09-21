@@ -9,15 +9,24 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header" id="header">
       <div class="container header__container">
         <div class="header__logo logo">
           <svg class="logo__pic">
             <use xlink:href="./svg/sprite.svg#logo"></use>
           </svg>
         </div>
-        <a href="#" class="hamburger-menu">
-          <div class="hamburger-menu__display"></div>
+        <a href="#" class="hamburger-menu" id="menu-btn">
+          <div class="hamburger-menu__img">
+            <svg class="hamburger-menu__pic">
+              <use xlink:href="./svg/sprite.svg#hamburger-menu"></use>
+            </svg>
+          </div>
+          <div class="hamburger-menu__img hidden">
+            <svg class="hamburger-menu__pic">
+              <use xlink:href="./svg/sprite.svg#cross"></use>
+            </svg>
+          </div>
         </a>
         <menu class="menu header__menu">
           <ul class="menu__list">
@@ -27,6 +36,18 @@
           </ul>
         </menu>
         <a href="#resume" class="button header__button">Заполнить резюме</a>
+      </div>
+      <div class="hidden-menu">
+        <div class="hidden-menu__block">
+          <menu class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#about">О компании</a></li>
+              <li class="menu__item"><a class="menu__link" href="#vacancies">Направления</a></li>
+              <li class="menu__item"><a class="menu__link" href="#advantages">Преимущества</a></li>
+            </ul>
+          </menu>
+          <a href="#resume" class="button">Заполнить резюме</a>
+        </div>
       </div>
     </header>
     <main>
@@ -414,6 +435,16 @@
         <div class="footer__copyright">&copy <time>2020</time>, Техно Диасофт. Политика&nbsp;конфиденциальности</div>
       </div>
     </footer>
+    <div class="arrow-up">
+      <a href="#header" class="arrow-up__link">
+        <div class="arrow-up__img">
+          <svg class="arrow-up__pic">
+            <use xlink:href="./svg/sprite.svg#arrow-up"></use>
+          </svg>
+        </div>
+      </a>
+    </div>
   </div>
+  <script src="./js/inner-menu.js"></script>
 </body>
 </html>

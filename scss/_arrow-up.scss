@@ -1,0 +1,31 @@
+.arrow-up {
+  position: fixed;
+  bottom: rem(50px);
+  right: rem(50px);
+  line-height: 0;
+  z-index: 200;
+
+  @include tablets {
+    bottom: rem(40px);
+    right: rem(40px);
+  }
+
+  @include phones {
+    right: rem(30px);
+  }
+}
+
+.arrow-up__img {
+  width: 40px;
+  height: 40px;
+  color: $red;
+  transition: color .2s;
+}
+
+.arrow-up__img:hover {
+  color: $dark-red;
+
+  @include tablets {
+    color: $red;
+  }
+}
