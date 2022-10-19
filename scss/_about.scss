@@ -38,22 +38,23 @@
 
 .about__text {
   margin-bottom: rem(30px);
-  padding-top: rem(20px);
+  margin-top: rem(20px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  transition: height .3s;
+
+  @include phones {
+    row-gap: 15px;
+  }
   
   @include tablets {
-    padding-top: 0;    
+    margin-top: 0;    
   }
 
-  p {
-    margin-bottom: rem(20px);
-
-    @include tablets {
-      margin-bottom: rem(15px);
-    }
-  }
-
-  p:last-child {
-    margin-bottom: 0;
+  .hidden {
+    display: none;
   }
 }
 
@@ -78,10 +79,5 @@
 }
 
 .about__pic {
-  position: absolute;
-  
-  @include phones {
-
-  }
-  
+  position: absolute;  
 }
